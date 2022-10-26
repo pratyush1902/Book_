@@ -1,0 +1,56 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.book{
+
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px;
+    
+}
+img{
+    width: 300px;
+    height: 300px;
+    transition: all 0.3s ease;
+}
+img:hover{
+    transform: scale(1,1);
+}
+.button{
+    margin: 10px;
+    padding: 5px;
+    color:white;
+    background-color:  black;
+    border-radius: 10px;
+    width: 300px;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+     
+}
+.buttons{
+    background-color: red;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 300px;
+}
+.favs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
