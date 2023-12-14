@@ -10,17 +10,17 @@ export default function Detail() {
     const{id}=useParams();
      useEffect(()=>{
         axios.get(`${Book_Detail}/${id}`)
-        .then(res=>{
+        .then((res)=>{
            setBook(res.data) ;
         })
-        .catch(err=>console.log(err));
+        .catch((err)=>console.log(err));
 
      },[id])
   return (
     <div className='Details'>
       <div>
         <h2>{book?.title}</h2>
-        <img src={book.image_url}  alt="@"/>
+        <img src={book?.image_url}  alt="@"/>
       </div>
       <div>
         <h2>Description</h2>
